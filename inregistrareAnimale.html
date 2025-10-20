@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular de înregistrare animale</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Formular de înregistrare animale</h1>
+
+    <p class="intro">
+ Completeaza formularul de mai jos pentru a îți înregistra animalul tău la clinică.
+    </p>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nume_stapana">Nume stăpân:</label>
+            <input type="text" id="nume_stapana" name="nume_stapana" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Telefon:</label>
+            <input type="text" id="telefon" name="telefon" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nume_animal">Nume animal:</label>
+            <input type="text" id="nume_animal" name="nume_animal" required>
+        </div>
+
+        <div class="form-group">
+            <label for="specie">Specie:</label>
+            <select id="specie" name="specie" required>
+                <option value="">-- Selectați specia --</option>
+                <option value="caine">Câine</option>
+                <option value="pisica">Pisică</option>
+                <option value="iepure">Iepure</option>
+                <option value="altul">Altul</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Sexul animalului:</label>
+            <div class="radio-group">
+                <label for="masculin">
+                    <input type="radio" id="masculin" name="sex" value="masculin" required>
+                    Masculin 
+                </label>
+                <label for="feminin">
+                    <input type="radio" id="feminin" name="sex" value="feminin">
+                    Feminin
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Servicii dorite:</label>
+            <div class="checkbox-group">
+                <label for="vaccinare">
+                    <input type="checkbox" id="vaccinare" name="servicii[]" value="vaccinare">
+                    Vaccinare
+                </label>
+                <label for="deparazitare">
+                    <input type="checkbox" id="deparazitare" name="servicii[]" value="deparazitare">
+                    Deparazitare
+                </label>
+                <label for="consult">
+                    <input type="checkbox" id="consult" name="servicii[]" value="consult">
+                    Consult
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="observatii">Observații :</label>
+            <textarea id="observatii" name="observatii"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="submit-btn">Înregistrează</button>
+            <button type="reset" class="reset-btn">Resetează Formularul</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
